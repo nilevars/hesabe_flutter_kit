@@ -32,7 +32,7 @@ class HesabePaymentResponse {
   String variable4;
   String variable5;
   int method;
-  String administrativeCharge;
+  var administrativeCharge;
 
   factory HesabePaymentResponse.fromJSON(dynamic json) {
     return HesabePaymentResponse(
@@ -51,7 +51,7 @@ class HesabePaymentResponse {
       variable4: json['response']['variable4'] as String,
       variable5: json['response']['variable5'] as String,
       method: json['response']['method'] as int,
-      administrativeCharge: json['response']['administrativeCharge'] as String,
+      administrativeCharge: json['response']['administrativeCharge'],
     );
   }
 }
