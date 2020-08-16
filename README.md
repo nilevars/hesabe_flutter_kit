@@ -1,6 +1,7 @@
 # Hesabe Flutter Kit
 
 Hesabe Flutter Kit is a Dart library for integrating Hesabe Payment to your Flutter App.
+Kindly refer to [Hesabe Developer Portal](https://developer.hesabe.com) for more info on API.
 
 ## Installation
 
@@ -18,10 +19,10 @@ var hesabePaymentHandler = HesabePaymentHandler(
         ivKey: "YOUR_IV_KEY",
         accessCode: "YOUR_ACCESS_CODE");
 var hesabePaymentRequest = HesabePaymentRequest(
-        amount: "2.123",
+        amount: "PAYMENT_AMOUNT",
         paymentType: "PAYMENT_TYPE",
-        version: "2.0",
-        merchantCode: "842217",
+        version: "VERSION NUMBER",
+        merchantCode: "YOUR_MERCHANT_CODE",
         responseUrl: "SUCCESS_URL",
         failureUrl: "FAILURE_URL");
 String json = jsonEncode(hesabePaymentRequest);
