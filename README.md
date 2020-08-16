@@ -30,14 +30,13 @@ var hesabePaymentRequest = HesabePaymentRequest(
         failureUrl: "FAILURE_URL");
 
 ///Pass the payment request to payment handler to get the checkout URL
-String json = jsonEncode(hesabePaymentRequest);
-var paymentUrl = await hesabePaymentHandler.checkout(json);
+var paymentUrl = await hesabePaymentHandler.checkout(jsonEncode(hesabePaymentRequest));
 
 ///Complete the payment in webview
 
 ///Decode the data received from the webview to HesabePaymentResponse Instance
 HesabePaymentResponse hesabePaymentResponse =
-        hesabePaymentHandler.getPaymentResponse(encryptedData);
+        hesabePaymentHandler.getPaymentResponse(data);
 
 ///Use the Payment Response instance to check the transaction details 
 ///Transaction Details includes status of payment,amount,paymentId and so on
