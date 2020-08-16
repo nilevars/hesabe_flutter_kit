@@ -8,4 +8,4 @@ Kindly take a look at the main.dart file for more guidance
 
 ## Screenshots
 
-![Home Page](../../assets/home.png)
+![Home Page](https://raw.githubusercontent.com/nilevars/hesabe_flutter_kit/master/example/assets/hesabe_screen.png)
