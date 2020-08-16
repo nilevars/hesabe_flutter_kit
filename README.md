@@ -14,7 +14,7 @@ import 'package:hesabe_flutter_kit/hesabe_flutter_kit.dart';
 
 ///Initialize the payment handler with your credentials
 var hesabePaymentHandler = HesabePaymentHandler(
-        baseUrl: "HESABE URL",
+        baseUrl: "HESABE_URL",
         merchantCode: "YOUR_MERCHANT_CODE",
         secretKey: "YOUR_SECRET_KEY",
         ivKey: "YOUR_IV_KEY",
@@ -24,7 +24,7 @@ var hesabePaymentHandler = HesabePaymentHandler(
 var hesabePaymentRequest = HesabePaymentRequest(
         amount: "PAYMENT_AMOUNT",
         paymentType: "PAYMENT_TYPE",
-        version: "VERSION NUMBER",
+        version: "VERSION_NUMBER",
         merchantCode: "YOUR_MERCHANT_CODE",
         responseUrl: "SUCCESS_URL",
         failureUrl: "FAILURE_URL");
