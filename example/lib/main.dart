@@ -39,8 +39,8 @@ class HomePage extends StatelessWidget {
         merchantCode: "842217",
         responseUrl: "https://getcardinal.co/",
         failureUrl: "https://getcardinal.co/");
-    String jsonUser = jsonEncode(hesabePaymentRequest);
-    var paymentUrl = await hesabePaymentHandler.checkout(jsonUser);
+    String json = jsonEncode(hesabePaymentRequest);
+    var paymentUrl = await hesabePaymentHandler.checkout(json);
     print(paymentUrl);
     return paymentUrl;
   }
