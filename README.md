@@ -11,6 +11,7 @@ Fork the git repo till the package is officially published
 
 ```dart
 import 'package:hesabe_flutter_kit/hesabe_flutter_kit.dart';
+
 ///Initialize the payment handler with your credentials
 var hesabePaymentHandler = HesabePaymentHandler(
         baseUrl: "HESABE URL",
