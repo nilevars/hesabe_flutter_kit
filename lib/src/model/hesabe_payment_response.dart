@@ -21,7 +21,7 @@ class HesabePaymentResponse {
   int code;
   String message;
   String resultCode;
-  double amount;
+  var amount;
   String paymentToken;
   String paymentId;
   String paidOn;
@@ -40,7 +40,7 @@ class HesabePaymentResponse {
       code: json['code'] as int,
       message: json['message'] as String,
       resultCode: json['response']['resultCode'] as String,
-      amount: json['response']['amount'] as double,
+      amount: json['response']['amount'],
       paymentToken: json['response']['paymentToken'] as String,
       paymentId: json['response']['paymentToken'] as String,
       paidOn: json['response']['paidOn'] as String,
