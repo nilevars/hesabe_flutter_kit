@@ -32,7 +32,6 @@ class MyWebView extends StatelessWidget {
             if (url.contains("https://getcardinal.co/")) {
               Uri uri = Uri.parse(url);
               if (uri.queryParameters.containsKey("data")) {
-                print(uri.queryParameters["data"]);
                 Navigator.of(context).pop();
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) => ResultPage(

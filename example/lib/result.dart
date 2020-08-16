@@ -13,7 +13,6 @@ class _ResultPageState extends State<ResultPage> {
   HesabePaymentResponse hesabePaymentResponse;
   @override
   void initState() {
-    print(widget.data);
     var hesabePaymentHandler = HesabePaymentHandler(
         baseUrl: "https://sandbox.hesabe.com",
         merchantCode: "842217",
@@ -22,13 +21,11 @@ class _ResultPageState extends State<ResultPage> {
         accessCode: "c333729b-d060-4b74-a49d-7686a8353481");
     hesabePaymentResponse =
         hesabePaymentHandler.getPaymentResponse(widget.data);
-    print(hesabePaymentResponse.paymentId);
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    print(hesabePaymentResponse.status);
     return Scaffold(
         appBar: AppBar(
           title: Text("Payment Status"),
