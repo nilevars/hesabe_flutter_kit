@@ -1,0 +1,18 @@
+name: hesabe_flutter_kit
+description: Hesabe Payment Gateway Integration
+version: 0.0.1
+author: Varsha Prabhakar
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  crypto: ^2.1.5
+  http: ^0.12.2
+  encrypt: ^4.0.2
+  convert: ^2.1.1
+
+dev_dependencies:
+  test: ^1.0.0
+
