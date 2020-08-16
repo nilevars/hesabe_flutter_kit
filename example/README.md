@@ -8,4 +8,4 @@ Kindly take a look at the main.dart file for more guidance
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/nilevars/hesabe_flutter_kit/master/example/assets/hesabe_screen.png" width="100" height="100">
+<img src="https://raw.githubusercontent.com/nilevars/hesabe_flutter_kit/master/example/assets/hesabe_screen.png"  width="400" height="790">
