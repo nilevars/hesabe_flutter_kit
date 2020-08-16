@@ -19,6 +19,7 @@ var hesabePaymentHandler = HesabePaymentHandler(
         secretKey: "YOUR_SECRET_KEY",
         ivKey: "YOUR_IV_KEY",
         accessCode: "YOUR_ACCESS_CODE");
+
 ///Create a payment request
 var hesabePaymentRequest = HesabePaymentRequest(
         amount: "PAYMENT_AMOUNT",
@@ -27,6 +28,7 @@ var hesabePaymentRequest = HesabePaymentRequest(
         merchantCode: "YOUR_MERCHANT_CODE",
         responseUrl: "SUCCESS_URL",
         failureUrl: "FAILURE_URL");
+
 ///Pass the payment request to payment handler to get the checkout URL
 String json = jsonEncode(hesabePaymentRequest);
 var paymentUrl = await hesabePaymentHandler.checkout(json);
