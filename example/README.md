@@ -8,4 +8,4 @@ Kindly take a look at the main.dart file for more guidance
 
 ## Screenshots
 
-![Home Page](/assets/home.png)
+![Home Page](../../assets/home.png)
