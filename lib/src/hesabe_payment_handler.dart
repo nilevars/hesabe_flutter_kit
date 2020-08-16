@@ -2,7 +2,6 @@ import 'model/hesabe_checkout_response.dart';
 import 'hesabe_crypto.dart';
 import 'model/hesabe_payment_response.dart';
 import 'dart:async';
-import 'package:http/http.dart';
 import 'package:http/io_client.dart';
 import 'dart:io';
 import 'package:meta/meta.dart';
