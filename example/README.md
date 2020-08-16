@@ -11,4 +11,4 @@ Kindly take a look at the main.dart file for more guidance
 <img src="https://raw.githubusercontent.com/nilevars/hesabe_flutter_kit/master/example/assets/home.png"  width="400" height="790">
 <img src="https://raw.githubusercontent.com/nilevars/hesabe_flutter_kit/master/example/assets/hesabe_screen.png"  width="400" height="790">
 <img src="https://raw.githubusercontent.com/nilevars/hesabe_flutter_kit/master/example/assets/visa_screen.png"  width="400" height="790">
-<img src="https://raw.githubusercontent.com/nilevars/hesabe_flutter_kit/master/example/assets/payment_succes.png"  width="400" height="790">
+<img src="https://raw.githubusercontent.com/nilevars/hesabe_flutter_kit/master/example/assets/payment_success.png"  width="400" height="790">
