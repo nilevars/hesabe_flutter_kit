@@ -21,19 +21,22 @@ class MyApp extends StatelessWidget {
 
 class HomePage extends StatelessWidget {
   Future<String> getLaunchUrl() async {
+    /// Initialize the Payment Handler with the keys from Hesabe Merchant Portal
     var hesabePaymentHandler = HesabePaymentHandler(
         baseUrl: "https://sandbox.hesabe.com",
         merchantCode: "842217",
         secretKey: "PkW64zMe5NVdrlPVNnjo2Jy9nOb7v1Xg",
         ivKey: "5NVdrlPVNnjo2Jy9",
         accessCode: "c333729b-d060-4b74-a49d-7686a8353481");
+
+    /// Create a payment request
     var hesabePaymentRequest = HesabePaymentRequest(
         amount: "2.123",
         paymentType: "0",
         version: "2.0",
         merchantCode: "842217",
-        responseUrl: "https://getcardinal.co/",
-        failureUrl: "https://getcardinal.co/");
+        responseUrl: "https://yoursite.com/",
+        failureUrl: "https://yoursite.com/");
     String json = jsonEncode(hesabePaymentRequest);
     var paymentUrl = await hesabePaymentHandler.checkout(json);
     return paymentUrl;
@@ -49,7 +52,10 @@ class HomePage extends StatelessWidget {
         child: RaisedButton(
           color: Colors.blueGrey,
           onPressed: () async {
+            /// Get Payment URL
             var url = await getLaunchUrl();
+
+            /// Launch Webview
             Navigator.of(context).push(MaterialPageRoute(
                 builder: (BuildContext context) => MyWebView(
                       title: "Hesabe Payment",
