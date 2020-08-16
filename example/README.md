@@ -1,4 +1,4 @@
-#  Hesabe Payment Flutter Implementation
+#  Hesabe Payment Integration In Flutter 
 
 An Example that demontrates how to use hesabe_flutter_kit in your flutter projects
 
